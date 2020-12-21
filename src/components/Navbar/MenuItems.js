@@ -12,7 +12,7 @@ export const MenuItems = [
         className: 'activities-section'
     },
     {
-        title: 'contact',
+        title: 'Contact',
         className: 'contact-section'
     },
 ]
