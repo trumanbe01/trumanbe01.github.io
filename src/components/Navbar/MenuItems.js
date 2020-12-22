@@ -1,18 +1,22 @@
 export const MenuItems = [
     {
         title: 'About',
-        className: 'about-section'
+        className: 'about-section',
+        link: '#'
     },
     {
         title: 'Portfolio',
-        className: 'portfolio-section'
+        className: 'portfolio-section',
+        link: '#'
     },
     {
         title: 'Activities',
-        className: 'activities-section'
+        className: 'activities-section',
+        link: '#'
     },
     {
         title: 'Contact',
-        className: 'contact-section'
-    },
+        className: 'contact-section',
+        link: '#'
+    }
 ]
