@@ -1,0 +1,26 @@
+.leftProject, .rightProject {
+    background: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftProject {
+    flex-direction: row;
+}
+
+.rightProject {
+    flex-direction: row-reverse;
+}
+
+.project-img {
+    background: orange;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-text {
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+}
