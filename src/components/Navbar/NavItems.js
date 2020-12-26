@@ -1,22 +1,22 @@
-export const MenuItems = [
+export const NavItems = [
     {
         title: 'About',
         className: 'about-section',
-        link: '#'
+        link: '#about'
     },
     {
         title: 'Portfolio',
         className: 'portfolio-section',
-        link: '#'
+        link: '#portfolio'
     },
     {
         title: 'Activities',
         className: 'activities-section',
-        link: '#'
+        link: '#activities'
     },
     {
         title: 'Contact',
         className: 'contact-section',
-        link: '#'
+        link: '#contact'
     }
 ]
