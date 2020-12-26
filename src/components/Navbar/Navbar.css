@@ -1,6 +1,6 @@
 .NavbarItems {
-    background: #8a2be2;
-    height: 80px;
+    background: var(--c1);
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,13 +30,12 @@
 }
 
 .nav-section:hover {
-    background-color: #ffffff;
-    color: #8a2be2;
+    background-color: var(--c5);
+    color: var(--c1);
 }
 
 a {
-    color: #ffffff;
-    font-family: 'JetBrains Mono', monospace;
+    color: var(--c5);
     text-decoration: none;
     font-size: 1.5rem;
     padding: 5px 10px;
