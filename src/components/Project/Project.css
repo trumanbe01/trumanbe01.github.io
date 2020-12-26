@@ -1,26 +1,35 @@
 .leftProject, .rightProject {
-    background: greenyellow;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 2vh;
+    width: 80vw;
 }
 
 .leftProject {
     flex-direction: row;
+    border-style: solid hidden solid solid;
 }
 
 .rightProject {
     flex-direction: row-reverse;
+    border-style: solid solid solid hidden;
 }
 
 .project-img {
-    background: orange;
-    max-width: 100%;
-    height: auto;
+    max-width: 25%;
 }
 
 .project-text {
-    background: yellow;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    border-style: hidden solid hidden solid;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.project-techstack {
+    color: gray;
 }
