@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Tech from '../Tech/Tech';
 import './Project.css';
 
 class Project extends Component {
@@ -8,7 +9,13 @@ class Project extends Component {
                 <img className="project-img" src={this.props.image} />
                 <div className="project-text">
                     <a className="project-name" href={this.props.repo} target="_blank">{this.props.name}</a>
-                    <p className="project-techstack">Tech stack: {this.props.tech}</p>
+                    <div className="project-techstack">
+                        {this.props.tech.map((item, index) => {
+                            return(
+                                <Tech className="project-tech-card" name={item} />
+                            )
+                        })}
+                    </div>
                     <p className="project-desc">{this.props.desc}</p>
                 </div>
             </div>
