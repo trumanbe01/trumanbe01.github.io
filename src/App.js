@@ -1,6 +1,8 @@
 import './App.css';
 import Main from './pictures/Main.jpg';
 import Navbar from './components/Navbar/Navbar';
+import Project from './components/Project/Project';
+import {ProjectItems} from './components/Project/ProjectItems';
 
 const Titles = [
   'Computer Science Student'
@@ -23,6 +25,11 @@ function App() {
           </div>
         </div>
       </div>
+      {ProjectItems.map((item, index) => {
+        return(
+          <Project name={item.name} tech={item.tech} desc={item.desc} image={item.image} repo={item.repo} direction={index % 2 ?' right' : 'left'} />
+        )
+      })}
     </div>
   );
 }

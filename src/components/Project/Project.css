@@ -1,0 +1,44 @@
+.leftProject, .rightProject {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 80vw;
+}
+
+.leftProject {
+    flex-direction: row;
+    border-style: solid hidden solid solid;
+}
+
+.rightProject {
+    flex-direction: row-reverse;
+    border-style: solid solid solid hidden;
+}
+
+.project-img {
+    align-self: center;
+
+    flex-shrink: 0;
+
+    padding: 10px 10px;
+    max-width: 25%;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    border-style: hidden solid hidden solid;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.project-name {
+    text-decoration: none;
+}
+
+.project-techstack {
+    color: gray;
+}
