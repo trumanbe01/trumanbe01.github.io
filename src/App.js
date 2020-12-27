@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="main-section">
+      <div className="main-section" id="main">
         <img className="main-section-img" src={Main} alt="" />
         <div className="main-section-text">
           <h1 className="main-section-text-name">Truman Be</h1>
@@ -25,11 +25,13 @@ function App() {
           </div>
         </div>
       </div>
-      {ProjectItems.map((item, index) => {
-        return(
-          <Project name={item.name} tech={item.tech} desc={item.desc} image={item.image} repo={item.repo} direction={index % 2 ?' right' : 'left'} />
-        )
-      })}
+      <div className="projects-section" id="projects">
+        {ProjectItems.map((item, index) => {
+          return(
+            <Project name={item.name} tech={item.tech} desc={item.desc} image={item.image} repo={item.repo} direction={index % 2 ?' right' : 'left'} />
+          )
+        })}
+      </div>
     </div>
   );
 }

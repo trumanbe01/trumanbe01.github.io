@@ -6,7 +6,7 @@ class Navbar extends Component {
     render() {
         return(
             <nav className="NavbarItems">
-                <a className="navbar-title" href="#main-section">Truman Be</a>
+                <a className="navbar-title" href="#main">Truman Be</a>
                 <ul className='nav-menu'>
                     {NavItems.map((item, index) => {
                         return(

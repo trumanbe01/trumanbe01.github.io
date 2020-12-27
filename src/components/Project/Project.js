@@ -7,7 +7,7 @@ class Project extends Component {
             <div className={this.props.direction + 'Project'}>
                 <img className="project-img" src={this.props.image} />
                 <div className="project-text">
-                    <a className="project-name" href={this.props.repo}>{this.props.name}</a>
+                    <a className="project-name" href={this.props.repo} target="_blank">{this.props.name}</a>
                     <p className="project-techstack">Tech stack: {this.props.tech}</p>
                     <p className="project-desc">{this.props.desc}</p>
                 </div>
