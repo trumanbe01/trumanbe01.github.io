@@ -1,8 +1,7 @@
 .leftProject, .rightProject {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 2vh;
+    align-items: stretch;
     width: 80vw;
 }
 
@@ -17,17 +16,27 @@
 }
 
 .project-img {
+    align-self: center;
+
+    flex-shrink: 0;
+
+    padding: 10px 10px;
     max-width: 25%;
 }
 
 .project-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     align-items: flex-start;
     border-style: hidden solid hidden solid;
     padding: 10px 10px;
     text-align: left;
+}
+
+.project-name {
+    text-decoration: none;
 }
 
 .project-techstack {
