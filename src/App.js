@@ -13,11 +13,13 @@ const Titles = [
 function App() {
   return (
     <div className="App">
-      {ActivityItems.map((item, index) => {
-        return(
-          <Activity name={item.name} date={item.date} desc={item.desc} image={item.image} />
-        )
-      })}
+      <div className="activities-section">
+        {ActivityItems.map((item, index) => {
+          return(
+            <Activity role={item.role} org={item.org} date={item.date} desc={item.desc} image={item.image} />
+          )
+        })}
+      </div>
     </div>
   );
 }

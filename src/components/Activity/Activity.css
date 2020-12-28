@@ -1,0 +1,28 @@
+.activity-box {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+}
+
+.activity-img {
+    max-width: 300px;
+    height: auto;
+}
+
+.activity-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.activity-text-title {
+
+}
+
+.activity-text-date {
+
+}
+
+.activity-text-desc {
+
+}
